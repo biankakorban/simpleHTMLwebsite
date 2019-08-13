@@ -1,0 +1,464 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="js/MusicShop.js"></script>
+    <title>Music shop</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/MusicShop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="headerContainer">
+
+            <div id="header1">
+                <div id="headerLogo">
+                    <img src="images/lovemusic.jpg" alt="Music" id="headerLogoImg">
+                </div>
+                <div id="headerMotto">
+                    <h2 id="headerHeading"> The best music shop ever !!!  </h2>
+                </div>
+            </div>
+
+            <div id="header2">
+                <div id="headerCompanyName">
+                    <h1 id="headerHeading2"> Music Shop </h1>
+                    <div id="headerPar1_2">
+                        <p id="headerPar">
+                            'One good thing about music, <br>
+                            when it hits you, <br>
+                            you feel no pain.'
+                        </p>
+                        <p id="headerPar2"> Bob Marley <br> </p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <div id="header3">
+                <div id="divHeaderButtonSearch">
+                    <form>
+                        <input type="text" placeholder="Search.." name="search" id="headerButtonSearch1">
+                        <button type="submit" id="headerButtonSearch2"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+
+                <div id="divHeaderShoppingCart">
+                    <a href="MusicShop_ShoppingCart.html"> Shopping Cart </a>
+                </div>
+                <div id="loginRegisterHome">
+                    <a href="MusicShop_Register.html">Register</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="headerNav">
+            <nav>
+                <a href="MusicShop_Home.html" class="active">Home</a>
+                <a href="MusicShop_Items.html">Items by artists</a>
+                <a href="MusicShop_Events.html">Events</a>
+                <a href="MusicShop_LoginRegister.html">Login/Register</a>
+                <a href="MusicShop_ContactUs.html">Contact Us</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <article id="2ndart" class="article">
+
+        <div id="itemsContainer">
+
+
+            <div id="sideItemsNavigationContainer">
+                <nav>
+                    <a href="#Artist1">The Vines</a>
+                    <a href="#Artist2">Sick Puppies</a>
+                    <a href="#Artist3">Sneaky Sound System</a>
+                    <a href="#Artist4">The Presets</a>
+                </nav>
+            </div>
+
+
+            <div id="itemsByArtistContainer">
+
+                <div class="itemsArtist">
+                    <article>
+                        <div class="divArtist">
+                            <a name="Artist1"><h1>The Vines</h1></a>
+
+                            <section>
+                                <br>
+                                <p>
+                                    The Vines are an Australian rock band formed in 1994 in Sydney.
+                                    Their sound has been described as a musical hybrid of 1960s garage rock and 1990s alternative rock.
+                                    The band's current line-up consists of vocalist and guitarist Craig Nicholls, bass guitarist Tim John and drummer Lachlan West.
+                                </p>
+                                <p>
+                                    The Vines' success in the Australian recording industry resulted in winning an ARIA Award in 2002,
+                                    'Breakthrough Artist – Single', for "Get Free" and receiving five other nominations for their debut album Highly Evolved,
+                                    plus two further nominations in subsequent years. In 2003, the album went platinum in Australia, and since then the band has released
+                                    four albums and a best-of compilation from their time at Capitol Records. The Vines have released six studio albums to date.
+                                </p>
+                            </section>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="divItemsTable">
+                            <table class="itemsTable" onload="readInput()">
+                                <tr>
+                                    <th> <img src="images/220px-TheVines_HighlyEvolved.jpg" alt="cd" class="cdImageItems"></th>
+                                    <th>
+                                        <p>The Vines<br /><br />Highly Evolved(2002)<br /><br />$20.99</p>
+                                        <input id="txt" type="text" name="txt" class="valid" onblur="return ValidateTxt(this,txtHelp)" /><br />
+                                        <span id="txtHelp"></span>
+                                    </th>
+                                    <th> <button class="buttonBuyItem" onclick="displayItems()">Add to cart</button></th>
+                                </tr>
+                                <tr>
+                                    <th> <img src="images/220px-TheVines_WinningDays.jpg" alt="cd" class="cdImageItems"></th>
+                                    <th>
+                                        <p> The Vines <br><br> Winning Days(2004) <br><br> $ 24.00</p>
+                                        <input id="txt2" type="text" name="txt" class="valid" onblur="return ValidateTxt(this,txt2Help)" /><br />
+                                        <span id="txt2Help"></span>
+                                    </th>
+                                    <th> <button class="buttonBuyItem" onclick="displayItems()">Add to cart</button></th>
+                                </tr>
+                                <tr>
+                                    <th> <img src="images/220px-TheVines_VisionValley.jpg" alt="cd" class="cdImageItems"></th>
+                                    <th>
+                                        <p> The Vines <br><br> Vision Valley(2006) <br><br> $ 24.50</p>
+                                        <input id="txt3" type="text" name="txt" class="valid" onblur="return ValidateTxt(this,txt3Help)" /><br />
+                                        <span id="txt3Help"></span>
+                                    </th>
+                                    <th> <button class="buttonBuyItem" onclick="displayItems()">Add to cart</button></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="itemsArtist">
+                    <article>
+                        <div class="divArtist">
+                            <a name="Artist2"><h1>Sick Puppies</h1></a>
+                            <section>
+                                <br>
+                                <p>
+                                    Sick Puppies is an Australian rock band, formed in 1997. Sick Puppies rose to prominence in 2006 when their song "All the Same" was uploaded,
+                                    along with a video, to YouTube. The video supported the Free Hugs Campaign, which was launched in Sydney, and has since received over 77 million
+                                    views on the website. This success was followed up with Dressed Up as Life in 2007, which entered the Billboard 200 at number 181.
+                                    Their third studio album, Tri-Polar, came out on 14 July 2009. The band's fourth studio album, Connect was released on 16 July 2013.
+                                    They released their fifth studio album, Fury on 20 May 2016 with new vocalist Bryan Scott after Shimon Moore left the band in October 2014.
+                                </p>
+                            </section>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="divItemsTable">
+                            <table class="itemsTable">
+                                <tr>
+                                    <th> <img src="images/220px-Tri-Polar_album_cover_by_Sick_Puppies.jpg" alt="cd" class="cdImageItems"></th>
+                                    <th>
+                                        <p>Sick Puppies<br><br>Tri-Polar(2009)<br><br> $ 25.00</p>
+                                        <input id="txt4" type="text" name="txt" class="valid" onblur="return ValidateTxt(this,txt4Help)" /><br />
+                                        <span id="txt4Help"></span>
+                                    </th>
+                                    <th> <button class="buttonBuyItem" onclick="displayItems()">Add to cart</button></th>
+                                </tr>
+                                <tr>
+                                    <th> <img src="images/Connect,_Sick_Puppies_Cover_Art.jpg" alt="cd" class="cdImageItems"></th>
+                                    <th>
+                                        <p>Sick Puppies<br><br>Connect(2013)<br><br> $ 27.50</p>
+                                        <input id="txt5" type="text" name="txt" class="valid" onblur="return ValidateTxt(this,txt5Help)" /><br />
+                                        <span id="txt5Help"></span>
+                                    </th>
+                                    <th> <button class="buttonBuyItem" onclick="displayItems()">Add to cart</button></th>
+                                </tr>
+                                <tr>
+                                    <th> <img src="images/Fury_by_Sick_Puppies.jpg" alt="cd" class="cdImageItems"></th>
+                                    <th>
+                                        <p>Sick Puppies<br><br>Fury(2016)<br><br> $ 28.99</p>
+                                        <input id="txt6" type="text" name="txt" class="valid" onblur="return ValidateTxt(this,txt6Help)" /><br />
+                                        <span id="txt6Help"></span>
+                                    </th>
+                                    <th> <button class="buttonBuyItem" onclick="displayItems()">Add to cart</button></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="itemsArtist">
+                    <article>
+                        <div class="divArtist">
+                            <a name="Artist3"><h1>Sneaky Sound System</h1></a>
+                            <section>
+                                <br>
+                                <p>
+                                    Sneaky Sound System is an Australian dance music group formed in late 2001 by Black Angus (Angus McDonald) on guitar,
+                                    MC Double D (Daimon Downey) on vocoder and vocals, Damien Hesse (DJ) and Nick Broadhurst on saxophone.
+                                    They were joined in 2004 by Connie Mitchell (ex-Primary) on vocals; Downey left the band in September 2009,
+                                    Hesse in 2005 and Broadhurst in 2006. On 12 August 2006, they released their self-titled debut studio album,
+                                    which peaked at No. 5 on the ARIA Albums Chart in mid-November 2007 and was certified 3× platinum by December 2011,
+                                    denoting shipments of 210,000 copies. The group's breakthrough single, "I Love It", which was issued on 8 July 2006,
+                                    peaked at No. 24 on the ARIA Singles Chart and spent 73 weeks in the Top 100 – this broke the record as the longest
+                                    charting single previously held by The Living End's 1997 hit, "Second Solution / Prisoner of Society", at 69 weeks.
+                                    Their second studio effort, 2, which appeared on 16 August 2008, became their first number-one album.
+                                    On 7 October 2011, From Here to Anywhere was released and reached at No. 11. At ARIA Music Awards ceremonies they have been nominated
+                                    fourteen times winning twice in 2007 for Best Dance Release and Breakthrough Artist – Album for their eponymous album.
+                                </p>
+                            </section>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="divItemsTable">
+                            <table class="itemsTable">
+                                <tr>
+                                    <th> <img src="images/220px-SneakySoundSystem-SneakySoundSystem.jpg" alt="cd" class="cdImageItems"></th>
+                                    <th>
+                                        <p>Sneaky Sound System<br><br>Sneaky Sound System(2006)<br><br> $ 18.00</p>
+                                        <input id="txt7" type="text" name="txt" class="valid" onblur="return ValidateTxt(this,txt7Help)" /><br />
+                                        <span id="txt7Help"></span>
+                                    </th>
+                                    <th> <button class="buttonBuyItem" onclick="displayItems()">Add to cart</button></th>
+                                </tr>
+                                <tr>
+                                    <th> <img src="images/220px-Sneaky_Sound_System_-_2.jpg" alt="cd" class="cdImageItems"></th>
+                                    <th>
+                                        <p>Sneaky Sound System<br><br>2(2008)<br><br> $ 20.00</p>
+                                        <input id="txt8" type="text" name="txt" class="valid" onblur="return ValidateTxt(this,txt8Help)" /><br />
+                                        <span id="txt8Help"></span>
+                                    </th>
+                                    <th> <button class="buttonBuyItem" onclick="displayItems()">Add to cart</button></th>
+                                <tr>
+                                    <th> <img src="images/220px-FromHeretoAnywhere.jpeg" alt="cd" class="cdImageItems"></th>
+                                    <th>
+                                        <p>Sneaky Sound System<br><br>From Here to Anywhere(2011)<br><br> $ 25.00</p>
+                                        <input id="txt9" type="text" name="txt" class="valid" onblur="return ValidateTxt(this,txt9Help)" /><br />
+                                        <span id="txt9Help"></span>
+                                    </th>
+                                    <th> <button class="buttonBuyItem" onclick="displayItems()">Add to cart</button></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="itemsArtist">
+                    <article>
+                        <div class="divArtist">
+                            <a name="Artist4"><h1>The Presets</h1></a>
+                            <section>
+                                <br>
+                                <p>
+                                    The Presets are an electronic music duo consisting of Australian musicians Julian Hamilton (vocals, keyboards) and Kim Moyes (drums, keyboards).
+                                    Formed in 2003 and signed to Modular Records, The Presets released two EPs (Blow Up, Girl and the Sea) in advance of their debut album, Beams,
+                                    released in 2005 to positive critical response. After two years of touring, including as the Australian support for Daft Punk,
+                                    the band's 2008 release, Apocalypso, debuted at number one on the ARIA Albums Chart, and went on to win six awards at ARIA Awards 2008, including Album of the Year.
+                                </p>
+                                <p>
+                                    In 2009 Hamilton and Moyes won an APRA Award for Songwriters of the Year and another ARIA Award, this time for Best Dance Release for
+                                    "Talk Like That". They released their third album, Pacifica, in Australia in September 2012. It reached No. 3 on the ARIA Albums Chart.
+                                    The Presets are known for their dynamic live shows.
+                                </p>
+                                <p>
+                                    Aside from the Presets' extensive performance work, the duo has remixed tracks for several other artists including Kings of Leon,
+                                    Silverchair and Lenny Kravitz. The Presets are recognized as key players in the dance music explosion in Australia in the late 2000s.
+                                </p>
+                            </section>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="divItemsTable">
+                            <table class="itemsTable">
+                                <tr>
+                                    <th> <img src="images/220px-Beams_(album).jpg" alt="cd" class="cdImageItems"></th>
+                                    <th>
+                                        <p>The Presets<br><br>Beams(2005)<br><br> $ 18.00</p>
+                                        <input id="txt10" type="text" name="txt" class="valid" onblur="return ValidateTxt(this,txt10Help)" /><br />
+                                        <span id="txt10Help"></span>
+                                    </th>
+                                    <th> <button class="buttonBuyItem" onclick="displayItems()">Add to cart</button></th>
+                                </tr>
+                                <tr>
+                                    <th> <img src="images/220px-Apocalypso_(album).jpg" alt="cd" class="cdImageItems"></th>
+                                    <th>
+                                        <p>The Presets<br><br>Apocalypso(2008)<br><br> $ 24.00</p>
+                                        <input id="txt11" type="text" name="txt" class="valid" onblur="return ValidateTxt(this,txt11Help)" /><br />
+                                        <span id="txt11Help"></span>
+                                    </th>
+                                    <th> <button class="buttonBuyItem" onclick="displayItems()">Add to cart</button></th>
+                                <tr>
+                                    <th> <img src="images/220px-Pacifica_(The_Presets_album).png" alt="cd" class="cdImageItems"></th>
+                                    <th>
+                                        <p>The Presets<br><br>Pacifica(2012)<br><br> $ 26.99</p>
+                                        <input id="txt12" type="text" name="txt" class="valid" onblur="return ValidateTxt(this,txt12Help)" /><br />
+                                        <span id="txt12Help"></span>
+                                    </th>
+                                    <th> <button class="buttonBuyItem" onclick="displayItems()">Add to cart</button></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <div id="itemsAsideContainer">
+                <aside>
+                    <h1> Music genres</h1>
+                    <section>
+                        <h4> List of genres: </h4>
+                        <nav id="itemsNavGenres">
+                            <a href="#Rock"> <br> Rock </a>
+                            <a href="#PopRock"> <br> Pop rock </a>
+                            <a href="#IndieRock"> <br> Indie rock </a>
+                        </nav>
+                    </section>
+                    <section>
+                        <a name="Rock"><h4> 1. Rock </h4></a>
+                        <p class="itemsAsideParagraphs">
+                            Rock music is a broad genre of popular music that originated as "rock and roll" in the United States in the early 1950s, and developed into
+                            a range of different styles in the 1960s and later, particularly in the United Kingdom and in the United States.
+                            It has its roots in 1940s and 1950s rock and roll, a style which drew heavily on the African-American genres of blues and rhythm and blues,
+                            and from country music. Rock music also drew strongly on a number of other genres such as electric blues and folk, and incorporated influences from jazz,
+                            classical and other musical styles. Musically, rock has centered on the electric guitar, usually as part of a rock group with electric bass and drums and one or more singers.
+                            Typically, rock is song-based music usually with a 4/4 time signature using a verse–chorus form, but the genre has become extremely diverse. Like pop music,
+                            lyrics often stress romantic love but also address a wide variety of other themes that are frequently social or political. <br><br>
+                        </p>
+                        <p class="itemsAsideParagraphs">
+                            By the late 1960s "classic rock" period, a number of distinct rock music subgenres had emerged, including hybrids like blues rock, folk rock, country rock, raga rock,
+                            and jazz-rock, many of which contributed to the development of psychedelic rock, which was influenced by the countercultural psychedelic and hippie scene.
+                            New genres that emerged included progressive rock, which extended the artistic elements; glam rock, which highlighted showmanship and visual style; and the diverse
+                            and enduring subgenre of heavy metal, which emphasized volume, power, and speed. In the second half of the 1970s, punk rock reacted by producing stripped-down,
+                            energetic social and political critiques. Punk was an influence in the 1980s on new wave, post-punk and eventually alternative rock. From the 1990s alternative rock
+                            began to dominate rock music and break into the mainstream in the form of grunge, Britpop, and indie rock. Further fusion subgenres have since emerged, including pop punk,
+                            electronic rock, rap rock, and rap metal, as well as conscious attempts to revisit rock's history, including the garage rock/post-punk and techno-pop revivals at the beginning of the 2000s.
+                        </p>
+                        <p class="itemsAsideParagraphs">
+                            Rock music has also embodied and served as the vehicle for cultural and social movements, leading to major subcultures including mods and rockers in the UK and the hippie counterculture
+                            that spread out from San Francisco in the US in the 1960s. Similarly, 1970s punk culture spawned the goth, punk, and emo subcultures.
+                            Inheriting the folk tradition of the protest song, rock music has been associated with political activism as well as changes in social attitudes to race, sex and drug use,
+                            and is often seen as an expression of youth revolt against adult consumerism and conformity.
+                        </p>
+                        <a name="PopRock"><h4> 2. Pop rock  </h4></a>
+                        <p class="itemsAsideParagraphs">
+                            Pop rock (also typeset as pop/rock) is rock music with a greater emphasis on professional songwriting and recording craft, and less emphasis on attitude.
+                            Originating in the 1950s as an alternative to rock and roll, early pop rock was influenced by the beat, arrangements, and style of rock and roll (and sometimes doo-wop).
+                            It may be viewed as a distinct genre field, rather than music that overlaps with pop and rock. The detractors of pop rock often deride it as a slick, commercial product,
+                            less authentic than rock music.
+                        </p>
+                        <p class="itemsAsideContainerParagraphs">
+                            Much pop and rock music has been very similar in sound, instrumentation and even lyrical content. The terms "pop rock" and "power pop" have been used
+                            to describe more commercially successful music that uses elements from, or the form of, rock music. Writer Johan Fornas views pop/rock as "one single, continuous genre field",
+                            rather than distinct categories. To the authors Larry Starr and Christopher Waterman, it is defined as an "upbeat variety of rock music" represented by artists and bands such as:
+                            Andy Kim, the Bells, Paul McCartney, Lighthouse, and Peter Frampton.
+                        </p>
+                        <p class="itemsAsideContainerParagraphs">
+                            The term pop has been used since the early twentieth century to refer to popular music in general, but from the mid-1950s it began to be used for a distinct genre,
+                            aimed at a youth market, often characterized as a softer alternative to rock and roll. In the aftermath of the British Invasion, from about 1967,
+                            it was increasingly used in opposition to the term rock music, to describe a form that was more commercial, ephemeral and accessible.
+                        </p>
+                        <p class="itemsAsideContainerParagraphs">
+                            As of the 2010s, guitar pop rock and indie rock are roughly synonymous terms used as a contrast to non-guitar based pop music like hip hop
+                            and R&B.
+                        </p>
+                        <a name="IndieRock"><h4> 3. Indie rock</h4></a>
+                        <p class="itemsAsideParagraphs">
+                            Indie rock is a genre of alternative rock that originated in the United States and the United Kingdom in the 1980s. Originally used to describe independent record labels,
+                            the term became associated with the music they produced and was initially used interchangeably with "alternative rock". As grunge and punk revival bands in the US,
+                            and then Britpop bands in the UK, broke into the mainstream in the 1990s, it came to be used to identify those acts that retained an outsider and underground perspective.
+                            In the 2000s, as a result of changes in the music industry and the growing importance of the Internet, some indie rock acts began to enjoy commercial success,
+                            leading to questions about its meaningfulness as a term.
+                        </p>
+                        <p class="itemsAsideParagraphs">
+                            Sometimes used interchangeably with "guitar pop rock", in the mid-1980s, the term "indie" (or "indie pop") began to be used to describe the music produced on punk
+                            and post-punk labels.Some prominent indie rock record labels were founded during the 1980s. During the 1990s, Grunge bands broke into the mainstream,
+                            and the term "alternative" lost its original counter-cultural meaning. The term "indie rock" became associated with the bands and genres
+                            that remained dedicated to their independent status. By the end of the 1990s indie rock developed subgenres and related styles including lo-fi,
+                            noise pop, emo, slowcore, post-rock and math rock.In the 2000s, changes in the music industry and in music technology enabled a new wave
+                            of indie rock bands to achieve mainstream success.
+                        </p>
+                        <p class="itemsAsideParagraphs">
+                            In the early 2000s, a new group of bands that played a stripped-down and back-to-basics version of guitar rock emerged into the mainstream.
+                            The commercial breakthrough from these scenes was led by four bands: The Strokes, The White Stripes, The Hives and The Vines.
+                            Emo also broke into mainstream culture in the early 2000s. By the end of the 2000s the proliferation of indie bands was being referred to as "indie landfill".
+                        </p>
+                    </section>
+                </aside>
+            </div>
+            <div class="divbuttonGoToTop">
+                <button onclick="topFunction()" class="buttonGoToTop" title="Go to top">Top</button>
+            </div>
+        </div>
+    </article>
+    <footer id="footer">
+        <div id="footerContainer">
+            <div id="footerNav">
+                <nav>
+                    <a href="MusicShop_Home.html" class="active">Home</a>
+                    <a href="MusicShop_Items.html">Items</a>
+                    <a href="MusicShop_Events.html">Events </a>
+                    <a href="MusicShop_LoginRegister.html">Login/Register</a>
+                    <a href="MusicShop_ContactUs.html">Contact Us</a>
+                </nav>
+            </div>
+
+            <div id="footerContactInfoFollowUs">
+                <div id="footerContactUs">
+                    <h3> Contact information </h3>
+                    <p>
+                        Sydney, Australia <br><br>
+                        Phone: +61 0426 426 426 <br><br>
+                        Address: 27 Crystal St, Petersham NSW 2049 <br><br>
+                        Email: bianka.korban@gmail.com <br> <br>
+                    </p>
+                </div>
+                <br>
+                <div id="footerFollowUs">
+                    <p>
+                        Follow Us !!!!
+                        <a href="https://www.facebook.com/">Facebook</a> ||
+                        <a href="https://twitter.com/">Twitter</a> ||
+                        <a href="https://www.instagram.com/?hl=pl">Instagram</a>
+                    </p>
+                </div>
+            </div>
+
+        <div id="footerMapDiv">
+            <h3>Shop location</h3>
+            <div id="map"></div>
+        </div>
+
+        </div>
+        <div style="clear:both;"> </div>
+        <div id="footerCopy">
+            <p id="footerCopyPar"> Copyright &copy Bianka Korban 2018 </p>
+        </div>
+    </footer>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = { lat: -33.89187, lng: 151.15816 };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru
+            });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({ position: uluru, map: map });
+        }
+    </script>
+    <!-- Replace the value of the key parameter with your own API key. -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIYAjVqvF2SYKyNs0L4wCoyNz-5xe2L8w&callback=initMap"></script>
+</body>
+</html>

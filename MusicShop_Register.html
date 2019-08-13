@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="js/MusicShop.js"></script>
+    <title>Music shop</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="css/MusicShop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <div id="headerContainer">
+        <div id="header1">
+          <div id="headerLogo">
+            <img src="images/lovemusic.jpg" alt="Music" id="headerLogoImg" />
+          </div>
+          <div id="headerMotto">
+            <h2 id="headerHeading">The best music shop ever !!!</h2>
+          </div>
+        </div>
+
+        <div id="header2">
+          <div id="headerCompanyName">
+            <h1 id="headerHeading2">Music Shop</h1>
+            <div id="headerPar1_2">
+              <p id="headerPar">
+                'One good thing about music, <br />
+                when it hits you, <br />
+                you feel no pain.'
+              </p>
+              <p id="headerPar2">Bob Marley <br /></p>
+            </div>
+            <br />
+          </div>
+        </div>
+
+        <div id="header3">
+          <div id="divHeaderButtonSearch">
+            <form>
+              <input
+                type="text"
+                placeholder="Search.."
+                name="search"
+                id="headerButtonSearch1"
+              />
+              <button type="submit" id="headerButtonSearch2">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <div id="divHeaderShoppingCart">
+            <a href="MusicShop_ShoppingCart.html"> Shopping Cart </a>
+          </div>
+          <div id="loginRegisterHome">
+            <a href="MusicShop_Register.html">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="headerNav">
+        <nav>
+          <a href="MusicShop_Home.html" class="active">Home</a>
+          <a href="MusicShop_Items.html">Items by artists</a>
+          <a href="MusicShop_Events.html">Events</a>
+          <a href="MusicShop_LoginRegister.html">Login/Register</a>
+          <a href="MusicShop_ContactUs.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <article class="article">
+      <div id="register">
+        <h1>Register</h1>
+        <form
+          id="registerForm"
+          onsubmit="return ValidateAll(this)"
+          onreset="ResetForm()"
+          action="Thankyou.html"
+        >
+          <br /><br />
+          <label> First Name: </label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            class="valid"
+            onblur="return ValidateFirstName(this,firstNameHelp)"
+          />
+          <span id="firstNameHelp"></span>
+          <br />
+          <br />
+          <label> Last Name: </label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            class="valid"
+            onblur="return ValidateLastName(this, lastNameHelp)"
+          />
+          <span id="lastNameHelp"></span>
+          <br />
+          <br />
+          <br /><br />
+          <label> Email:</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="valid"
+            onblur="return ValidateEmail(this,emailHelp)"
+          />
+          <span id="emailHelp"></span>
+          <br />
+          <br />
+          <label>Phone number:</label>
+          <input
+            type="text"
+            name="phoneNumber"
+            id="phoneNumber"
+            class="valid"
+            onblur="return ValidatePhoneNumber(this, phoneNumberHelp)"
+          />
+          <span id="phoneNumberHelp"></span>
+          <br />
+          <br />
+          <br /><br />
+          <label>Street:</label>
+          <input
+            type="text"
+            name="street"
+            id="street"
+            class="valid"
+            onblur="return ValidateStreet(this,streetHelp)"
+          />
+          <span id="streetHelp"></span>
+          <br />
+          <br />
+          <label>Suburb:</label>
+          <input
+            type="text"
+            name="suburb"
+            id="suburb"
+            class="valid"
+            onblur="return ValidateSuburb(this,suburbHelp)"
+          />
+          <span id="suburbHelp"></span>
+          <br />
+          <br />
+          <label>Post Code:</label>
+          <input
+            type="text"
+            name="postCode"
+            id="postCode"
+            class="valid"
+            onblur="return ValidatePostCode(this,postCodeHelp)"
+          />
+          <span id="postCodeHelp"></span>
+          <br />
+          <br />
+          <label>Country:</label>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            class="valid"
+            onblur="return ValidateCountry(this, countryHelp)"
+          />
+          <span id="countryHelp"></span>
+          <br />
+          <br />
+          <br /><br />
+          <label>Username:</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="valid"
+            onblur="return ValidateUsername(this, usernameHelp)"
+          />
+          <span id="usernameHelp"></span>
+          <br />
+          <br />
+          <label>Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="valid"
+            onblur="return ValidatePassword(this, passwordHelp)"
+          />
+          <span id="passwordHelp"></span>
+          <br />
+          <br />
+          <br />
+          <button
+            id="Submit1"
+            type="submit"
+            value="submit"
+            class="buttonSubmit"
+          >
+            Submit
+          </button>
+          <button id="Reset1" type="reset" value="reset" class="buttonReset">
+            Reset
+          </button>
+          <br />
+          <br />
+        </form>
+      </div>
+      <div class="divbuttonGoToTop">
+        <button onclick="topFunction()" class="buttonGoToTop" title="Go to top">
+          Top
+        </button>
+      </div>
+    </article>
+    <footer id="footer">
+      <div id="footerContainer">
+        <div id="footerNav">
+          <nav>
+            <a href="MusicShop_Home.html" class="active">Home</a>
+            <a href="MusicShop_Items.html">Items</a>
+            <a href="MusicShop_Events.html">Events </a>
+            <a href="MusicShop_LoginRegister.html">Login/Register</a>
+            <a href="MusicShop_ContactUs.html">Contact Us</a>
+          </nav>
+        </div>
+
+        <div id="footerContactInfoFollowUs">
+          <div id="footerContactUs">
+            <h3>Contact information</h3>
+            <p>
+              Sydney, Australia <br /><br />
+              Phone: +61 0426 426 426 <br /><br />
+              Address: 27 Crystal St, Petersham NSW 2049 <br /><br />
+              Email: bianka.korban@gmail.com <br />
+              <br />
+            </p>
+          </div>
+          <br />
+          <div id="footerFollowUs">
+            <p>
+              Follow Us !!!!
+              <a href="https://www.facebook.com/">Facebook</a> ||
+              <a href="https://twitter.com/">Twitter</a> ||
+              <a href="https://www.instagram.com/?hl=pl">Instagram</a>
+            </p>
+          </div>
+        </div>
+
+        <div id="footerMapDiv">
+          <h3>Shop location</h3>
+          <div id="map"></div>
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+      <div id="footerCopy">
+        <p id="footerCopyPar">Copyright &copy Bianka Korban 2018</p>
+      </div>
+    </footer>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = { lat: -33.89187, lng: 151.15816 };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru
+        });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({ position: uluru, map: map });
+      }
+    </script>
+    <!-- Replace the value of the key parameter with your own API key. -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIYAjVqvF2SYKyNs0L4wCoyNz-5xe2L8w&callback=initMap"
+    ></script>
+  </body>
+</html>
